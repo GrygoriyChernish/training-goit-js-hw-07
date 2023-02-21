@@ -25,12 +25,6 @@ function createGalleryMarkup(galleryItems) {
     .join('');
 }
 
-function onEscButtonPress(evt) {
-  if (evt.key === 'Escape') {
-    instance.close();
-  }
-}
-
 function onGalleryImgClick(evt) {
   evt.preventDefault();
   const instance = basicLightbox.create(
@@ -46,4 +40,9 @@ function onGalleryImgClick(evt) {
     },
   );
   instance.show();
+  function onEscButtonPress(evt) {
+    if (evt.key === 'Escape') {
+      instance.close();
+    }
+  }
 }
