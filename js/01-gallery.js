@@ -46,3 +46,58 @@ function onGalleryImgClick(evt) {
     }
   }
 }
+
+// import { galleryItems } from './gallery-items.js';
+
+// const refs = {
+//   gallery: document.querySelector('.gallery'),
+// };
+
+// refs.gallery.addEventListener('click', onGalleryImgClick);
+
+// refs.gallery.innerHTML = createGalleryMarkup(galleryItems);
+
+// const instance = basicLightbox.create(
+//   `<img class="modal-img" width="1400" height="900" src="">
+// `,
+//   {
+//     onShow: () => {
+//       document.addEventListener('keydown', onEscButtonPress);
+//     },
+//     onClose: () => {
+//       document.removeEventListener('keydown', onEscButtonPress);
+//     },
+//   },
+// );
+
+// function createGalleryMarkup(galleryItems) {
+//   return galleryItems
+//     .map(
+//       ({ preview, original, description }) => `<li class="gallery__item">
+//   <a class="gallery__link" href="${original}">
+//     <img
+//       class="gallery__image"
+//       src="${preview}"
+//       data-source="${original}"
+//       alt='${description}'
+//     />
+//   </a>
+// </li>`,
+//     )
+//     .join('');
+// }
+
+// function onGalleryImgClick(evt) {
+//   evt.preventDefault();
+
+//   instance.show(() => {
+//     const elem = document.querySelector('.modal-img');
+//     elem.src = evt.target.dataset.source;
+//   });
+// }
+
+// function onEscButtonPress(evt) {
+//   if (evt.key === 'Escape') {
+//     instance.close();
+//   }
+// }
